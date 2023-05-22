@@ -15,7 +15,7 @@ The code defines an HTML string for the control panel, which is served to the cl
 
 Finally, the server listens for incoming requests on port 3000 and logs a message when it is ready to receive connections. When running, the server can receive key presses from the client, send UDP messages to the car, and receive UDP messages from the car to update the checkpoint times in the database.
 
-# qr_code_scanner.py: 
+# qr_reader.py: 
 The "qr_code_scanner.py" Python script is designed to run on a Raspberry Pi with a camera module. The script uses the PiCamera library to capture video frames from the camera and the zbarlight library to scan for QR codes in the captured frames. When a QR code is detected, the script sends the decoded data over UDP to a specified IP address and port number.
 
 The script starts by initializing the camera and setting the resolution and framerate. It then creates a stream to capture video frames and starts the camera preview.
